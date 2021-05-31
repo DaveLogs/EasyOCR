@@ -205,7 +205,7 @@ class Reader(object):
             available_lang = recog_config['lang_list']
             self.setModelLanguage(recog_network, lang_list, available_lang, available_lang)
             self.character = recog_config['character_list']
-            model_path = os.path.join(self.user_network_directory, recog_network+ '.pth')
+            model_path = os.path.join(self.model_storage_directory, recog_network+ '.pth')
             self.setLanguageList(lang_list, None)
 
         dict_list = {}
